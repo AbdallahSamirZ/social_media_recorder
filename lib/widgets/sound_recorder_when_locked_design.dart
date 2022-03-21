@@ -32,7 +32,7 @@ class SoundRecorderWhenLockedDesign extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      color: Colors.grey.shade100,
+      color: Colors.transparent,
       child: InkWell(
         onTap: () {
           soundRecordNotifier.isShow = false;
@@ -51,6 +51,7 @@ class SoundRecorderWhenLockedDesign extends StatelessWidget {
                 soundRecordNotifier.resetEdgePadding();
               },
               child: Container(
+
                 child: Transform.scale(
                   scale: 1.2,
                   child: ClipRRect(
@@ -81,6 +82,7 @@ class SoundRecorderWhenLockedDesign extends StatelessWidget {
               ),
             ),
             Expanded(
+
               child: InkWell(
                   onTap: () {
                     soundRecordNotifier.isShow = false;
@@ -95,7 +97,7 @@ class SoundRecorderWhenLockedDesign extends StatelessWidget {
                       overflow: TextOverflow.clip,
                       style: cancelTextStyle ??
                           TextStyle(
-                            color: Colors.black,
+                            color: Theme.of(context).textTheme.headline1!.color,
                           ),
                     ),
                   )),

@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
+
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -33,6 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.transparent,
       body: Center(
         child: Stack(
           children: [
@@ -41,6 +43,10 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Align(
                 alignment: Alignment.centerRight,
                 child: SocialMediaRecorder(
+                  backGroundColor: Colors.red,
+                  counterBackGroundColor: Colors.red,
+                  recordIconBackGroundColor: Colors.red,
+                  recordIconWhenLockBackGroundColor: Colors.red,
                   sendRequestFunction: (soundFile) {
                     // print("the current path is ${soundFile.path}");
                   },

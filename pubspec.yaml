@@ -9,17 +9,17 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
-  uuid: ^3.0.5
-  permission_handler: ^8.1.6
-  animated_text_kit: ^4.2.1
-  path_provider: ^2.0.4
-  provider: ^6.0.1
-  record: ^3.0.2
+  cupertino_icons:
+  uuid:
+  permission_handler:
+  animated_text_kit:
+  path_provider:
+  provider:
+  record:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.0
+  flutter_lints:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
